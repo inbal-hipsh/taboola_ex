@@ -1,0 +1,36 @@
+.widget {
+    width: 100%;
+}
+
+.recommendationsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.recommendationItem {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.recommendationImg {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .recommendationsContainer {
+        flex-direction: column;
+    }
+    .recommendationItem {
+        width: 100%;
+    }
+    .recommendationImg {
+        width: 100vw;
+        height: 100vw;
+    }
+  }
